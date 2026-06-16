@@ -1,0 +1,86 @@
+/* Form  _+Index Page */
+
+* {
+  font-size: 20px;
+}
+
+form.bg {
+  background-color: blanchedalmond;
+}
+form > * {
+  margin: 15px;
+}
+button.bg {
+  background-color: chartreuse;
+}
+
+#version-info {
+  font-family: monospace;
+  font-size: 0.8rem;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  padding: 4px 8px;
+  border-radius: 9999px;
+  border: 1px solid #e5e7eb;
+}
+
+/*  Navbar   */
+
+nav {
+  background-color: darkgoldenrod;
+  margin: 15px 5px;
+  padding: 5px;
+}
+nav ul {
+  margin: 10px 5px;
+}
+nav ul li {
+  list-style: none;
+  margin: 1px 10px;
+}
+
+nav ul li > a:hover {
+  background-color: rgb(228, 141, 141);
+}
+
+nav ul li a {
+  text-decoration-line: none;
+  color: white;
+  background-color: brown;
+  padding: 8px;
+}
+
+nav ul,
+nav {
+  display: flex;
+}
+
+/* Table */
+
+table {
+  background-color: rgb(246, 246, 248);
+}
+table * {
+  border: solid;
+  font-weight: 500;
+}
+table tr td,
+table button {
+  padding: 10px 25px;
+}
+
+/* table tbody tr button:first-child {
+  background-color: rgb(215, 230, 235);
+  color: black;
+} */
+/* table tbody tr:nth-child(even) {
+  background-color: rgb(168, 168, 168);
+} */
+table th {
+  background-color: beige;
+}
+tbody tr button:hover {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}

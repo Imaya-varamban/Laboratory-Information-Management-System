@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LIMS Registration</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sample Registration</h1>
+      <span id="version-info">Last Updated : 04 June 2026 | Version 1.0.0</span>
+      <p>Date : 05-June-2026</p>
+      <span>Time:<time datetime="10:30">10:30</time></span>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Sample Registration</a></li>
+        <li><a href="./sample-preparation.html">Sample Preparation</a></li>
+        <li><a href="./library-preparation.html">Library Preparation</a></li>
+        <li><a href="./sequencing.html">Sequencing</a></li>
+        <li>
+          <a href="./bioinfo-data-analytics.html"
+            >Bioinformatics Data Analysis</a
+          >
+        </li>
+      </ul>
+      <span>Logout: <a href="./index.html">Logout</a></span>
+    </nav>
+
+    <main>
+      <form action="">
+        <div>
+          <label for="customer-name">Name</label>
+          <input type="text" name="customer-name" id="customer-name" />
+        </div>
+        <div>
+          <label for="customer-institute">Institute</label>
+          <input
+            type="text"
+            name="customer-institute"
+            id="customer-institute"
+          />
+        </div>
+        <div>
+          <label for="sample-count">No. of. Samples</label>
+          <input type="number" name="sample-count" id="sample-count" />
+        </div>
+        <label for="sequencing-type" name="sequencing-type">
+          Sequencing-type</label
+        >
+        <select name="sequencing-type" id="sequencing-type">
+          <option value="">-- Select Sequencing Type --</option>
+          <optgroup label="Genome">
+            <option value="wgs">Whole Genome Sequencing (WGS)</option>
+            <option value="wes">Whole Exome Sequencing (WES)</option>
+            <option value="cpDNA">Chloroplast DNA (cpDNA) Sequencing</option>
+          </optgroup>
+          <optgroup label="Metagenome">
+            <option value="metagenome-sequencing">Metagenome Sequencing</option>
+            <option value="16s">16s rRNA</option>
+            <option value="18s">18s rRNA</option>
+            <option value="its">ITS</option>
+            <option value="amplicon-sequencing">Amplicon Sequencing</option>
+            <option value="shotgun">Shotgun</option>
+          </optgroup>
+          <optgroup label="Transcriptome">
+            <option value="total-rna">Total RNA</option>
+            <option value="mrna">mRNA Sequencing</option>
+            <option value="small-rna">Small RNA</option>
+            <option value="mi-rna">miRNA Sequencing</option>
+            <option value="single-cell-rna">Single-Cell RNA Sequencing</option>
+            <option value="pac-bio-iso-seq">
+              PacBio Isoform Sequencing (Iso-Seq)
+            </option>
+          </optgroup>
+          <optgroup label="Epigenome">
+            <option value="dna-binding-ch-ip--seq">
+              DNA binding sites (ChIP-Seq)
+            </option>
+            <option value="ch-ip--seq">Chromatin state (ChIP-Seq)</option>
+            <option value="dna-methylation">
+              DNA Methylation (BS-Seq, RRBS-Seq, MeDIP-Seq)
+            </option>
+            <option value="open-chromaticin-seq">
+              Open Chromatin Sequencing (ATAC-Seq)
+            </option>
+          </optgroup>
+          <optgroup label="Genotyping">
+            <option value="gbs">Genotyping by Sequencing (GBS)</option>
+            <option value="snp-microarray">SNP Microarray</option>
+          </optgroup>
+          <optgroup label="Bioinfomatic Analysis">
+            <option value="genome-data-analysis">Genome data analysis</option>
+            <option value="genome-wide-association-analysis">
+              Genome-wide Association Analysis (GWAS)
+            </option>
+            <option value="clinical-wes">Clinical WES</option>
+            <option value="transcriptome-data-analysis">
+              Transcriptome data analysis
+            </option>
+            <option value="gut-biome">Gut Microbiome Analysis</option>
+            <option value="diabetic-foot-ulcer">Diabetic Foot Ulcer</option>
+          </optgroup>
+        </select>
+
+        <div>
+          <input
+            type="radio"
+            name="Aging"
+            value="standard"
+            id="standard"
+            checked
+          />
+          <label for="standard">Standard</label>
+
+          <input
+            type="radio"
+            name="Aging"
+            value="high-priority"
+            id="high-priority"
+          />
+          <label for="high-priority">High Priority</label>
+        </div>
+        <button>Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
