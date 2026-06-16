@@ -3,6 +3,10 @@
 * {
   font-size: 20px;
 }
+#login{
+  color: red;
+  font-weight: bold;
+}
 
 form.bg {
   background-color: blanchedalmond;
